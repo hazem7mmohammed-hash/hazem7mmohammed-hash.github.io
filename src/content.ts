@@ -12,7 +12,7 @@ export const asset = (path: string) => import.meta.env.BASE_URL + path
 export const PROFILE = {
   name: 'Hazem Mohamed',
   role: { en: 'Video Editor', ar: 'مونتير فيديو' } satisfies LocalizedString,
-  email: 'hello@email.com',
+  email: 'hazem7mmohammed@gmail.com',
   location: {
     en: 'Cairo, Egypt',
     ar: 'القاهرة، مصر',
@@ -21,7 +21,7 @@ export const PROFILE = {
     youtube: 'https://youtube.com/@yourname',
     instagram: 'https://instagram.com/yourname',
     linkedin: 'https://linkedin.com/in/hazem-mohamed-3193542b3',
-    whatsapp: 'https://wa.me/0000000000',
+    whatsapp: 'https://wa.me/201123368374',
     x: 'https://x.com/yourname',
   },
 }
@@ -90,7 +90,7 @@ export type Dict = {
   'contact.eyebrow': string
   'contact.title': string
   'contact.subtitle': string
-  'contact.emailMe': string
+  'contact.whatsapp': string
   'contact.response': string
   'footer.rights': string
   'footer.built': string
@@ -177,7 +177,7 @@ export const translations: Record<Lang, Dict> = {
     'contact.title': "Let's cut something great together",
     'contact.subtitle':
       "I'm currently taking on new projects. Tell me about yours — I usually reply within 24 hours.",
-    'contact.emailMe': 'Send me an email',
+    'contact.whatsapp': 'Chat on WhatsApp',
     'contact.response': 'Usually replies within 24h',
     'footer.rights': 'All rights reserved.',
     'footer.built': 'Designed & built with React',
@@ -261,7 +261,7 @@ export const translations: Record<Lang, Dict> = {
     'contact.eyebrow': 'تواصل',
     'contact.title': 'لنصنع شيئًا رائعًا معًا',
     'contact.subtitle': 'أستقبل حاليًا مشاريع جديدة. أخبرني عن مشروعك — أرد عادةً خلال 24 ساعة.',
-    'contact.emailMe': 'راسلني عبر البريد',
+    'contact.whatsapp': 'تواصل عبر واتساب',
     'contact.response': 'أرد عادةً خلال 24 ساعة',
     'footer.rights': 'جميع الحقوق محفوظة.',
     'footer.built': 'صُمم وبُني بـ React',

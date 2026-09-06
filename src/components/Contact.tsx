@@ -1,21 +1,12 @@
 import { PROFILE } from '../content'
 import { useI18n } from '../i18n'
 import { Reveal } from './Reveal'
-import {
-  IconInstagram,
-  IconLinkedin,
-  IconMail,
-  IconWhatsapp,
-  IconX,
-  IconYoutube,
-} from './icons'
+import { IconLinkedin, IconMail, IconWhatsapp } from './icons'
 
 const SOCIALS = [
-  { name: 'YouTube', href: PROFILE.socials.youtube, Icon: IconYoutube },
-  { name: 'Instagram', href: PROFILE.socials.instagram, Icon: IconInstagram },
+  { name: 'Email', href: `mailto:${PROFILE.email}`, Icon: IconMail },
   { name: 'LinkedIn', href: PROFILE.socials.linkedin, Icon: IconLinkedin },
   { name: 'WhatsApp', href: PROFILE.socials.whatsapp, Icon: IconWhatsapp },
-  { name: 'X', href: PROFILE.socials.x, Icon: IconX },
 ]
 
 export function Contact() {
@@ -32,11 +23,15 @@ export function Contact() {
           </div>
 
           <div className="contact__actions">
-            <a href={`mailto:${PROFILE.email}`} className="btn btn--primary btn--lg">
-              <IconMail size={18} />
-              {PROFILE.email}
+            <a
+              href={PROFILE.socials.whatsapp}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn--primary btn--lg"
+            >
+              <IconWhatsapp size={18} />
+              {t('contact.whatsapp')}
             </a>
-            <p className="contact__hint">{t('contact.emailMe')}</p>
             <p className="contact__response">{t('contact.response')}</p>
           </div>
 

@@ -52,7 +52,13 @@ export function Hero() {
           <Reveal delay={160}>
             <p className="hero__role">{translate(PROFILE.role, lang)}</p>
           </Reveal>
+        </div>
 
+        <Reveal delay={200}>
+          <HeroPortrait />
+        </Reveal>
+
+        <div className="hero__content">
           <Reveal delay={240}>
             <p className="hero__tagline">{t('hero.tagline')}</p>
           </Reveal>
@@ -82,10 +88,6 @@ export function Hero() {
             </dl>
           </Reveal>
         </div>
-
-        <Reveal delay={200}>
-          <HeroPortrait />
-        </Reveal>
       </div>
     </section>
   )

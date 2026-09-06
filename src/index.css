@@ -509,24 +509,33 @@ ol {
   z-index: 1;
   width: min(var(--container), 100% - 48px);
   margin-inline: auto;
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-rows: auto auto;
   align-items: center;
-  gap: clamp(32px, 5vw, 64px);
+  gap: 0 clamp(32px, 5vw, 64px);
 }
 
 .hero__content {
   position: relative;
   z-index: 1;
-  flex: 1 1 auto;
   min-width: 0;
   max-width: 640px;
+}
+
+.hero__content:nth-child(1) {
+  grid-area: 1 / 1;
+}
+
+.hero__content:nth-child(3) {
+  grid-area: 2 / 1;
 }
 
 .hero__media {
   position: relative;
   z-index: 1;
-  flex: 0 0 auto;
   display: grid;
+  grid-area: 1 / 2 / 3 / 3;
   place-items: center;
 }
 
@@ -1634,15 +1643,23 @@ background:
   }
 
   .hero__inner {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .hero__content:nth-child(1) {
+    grid-area: auto;
+    margin-bottom: 30px;
   }
 
   .hero__media {
-    align-self: center;
-    order: -1;
-    margin-bottom: 20px;
+    grid-area: auto;
+    justify-self: center;
+    margin-bottom: 30px;
+  }
+
+  .hero__content:nth-child(3) {
+    grid-area: auto;
   }
 
   .hero__portrait {
