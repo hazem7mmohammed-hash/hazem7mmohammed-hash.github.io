@@ -158,9 +158,8 @@ export const translations: Record<Lang, Dict> = {
     'about.eyebrow': 'About',
     'about.title': 'The editor behind the cut',
     'about.p1':
-      "I'm a freelance video editor with 3+ years of hands-on experience creating short-form and long-form content for social media and digital platforms — with strong motion graphics in Adobe After Effects.",
-    'about.p2':
-      "I don't just cut footage. I analyze client needs and existing content first to find what can be improved, then bring an AI-assisted, multidisciplinary approach across the whole workflow — from ideation and production support to the final edit.",
+      'Freelance video editor with 3+ years of hands-on experience in short-form and long-form content — strong motion graphics in After Effects and an AI-driven, multidisciplinary approach to every project.',
+    'about.p2': '',
     'about.infoTitle': 'Quick facts',
     'about.infoLocation': 'Based in',
     'about.infoLanguages': 'Languages',

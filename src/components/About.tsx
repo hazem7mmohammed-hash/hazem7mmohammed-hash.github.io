@@ -22,7 +22,7 @@ export function About() {
         <div className="about">
           <Reveal className="about__text">
             <p className="about__p">{t('about.p1')}</p>
-            <p className="about__p">{t('about.p2')}</p>
+            {t('about.p2') !== '' && <p className="about__p">{t('about.p2')}</p>}
           </Reveal>
 
           <Reveal delay={140} className="about__facts">
