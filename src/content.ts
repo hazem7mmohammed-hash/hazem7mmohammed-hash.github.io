@@ -19,7 +19,7 @@ export const PROFILE = {
   } satisfies LocalizedString,
   socials: {
     youtube: 'https://youtube.com/@yourname',
-    instagram: 'https://instagram.com/yourname',
+    instagram: 'https://instagram.com/hazem_mmohammedd',
     linkedin: 'https://linkedin.com/in/hazem-mohamed-3193542b3',
     whatsapp: 'https://wa.me/201123368374',
     x: 'https://x.com/yourname',

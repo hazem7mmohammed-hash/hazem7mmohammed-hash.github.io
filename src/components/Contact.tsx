@@ -1,10 +1,11 @@
 import { PROFILE } from '../content'
 import { useI18n } from '../i18n'
 import { Reveal } from './Reveal'
-import { IconLinkedin, IconMail, IconWhatsapp } from './icons'
+import { IconInstagram, IconLinkedin, IconMail, IconWhatsapp } from './icons'
 
 const SOCIALS = [
   { name: 'Email', href: `mailto:${PROFILE.email}`, Icon: IconMail },
+  { name: 'Instagram', href: PROFILE.socials.instagram, Icon: IconInstagram },
   { name: 'LinkedIn', href: PROFILE.socials.linkedin, Icon: IconLinkedin },
   { name: 'WhatsApp', href: PROFILE.socials.whatsapp, Icon: IconWhatsapp },
 ]
