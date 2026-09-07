@@ -92,21 +92,3 @@ export function Hero() {
     </section>
   )
 }
-
-export function Marquee() {
-  const { t } = useI18n()
-  const items = t('marquee')
-  const row = [...items, ...items]
-  return (
-    <div className="marquee" aria-hidden="true">
-      <div className="marquee__track">
-        {row.map((item, i) => (
-          <span key={i} className="marquee__item">
-            <span className="marquee__star">✦</span>
-            {item}
-          </span>
-        ))}
-      </div>
-    </div>
-  )
-}

@@ -41,7 +41,6 @@ export type Dict = {
   'hero.statYears': string
   'hero.statPlugin': string
   'hero.statAI': string
-  marquee: string[]
   'showreel.eyebrow': string
   'showreel.title': string
   'showreel.subtitle': string
@@ -116,16 +115,6 @@ export const translations: Record<Lang, Dict> = {
     'hero.statYears': 'Years of editing',
     'hero.statPlugin': 'After Effects plugin built',
     'hero.statAI': 'AI-driven creative workflow',
-    marquee: [
-      'Editing',
-      'Motion Graphics',
-      'Short Form',
-      'Long Form',
-      'After Effects',
-      'Premiere Pro',
-      'CapCut',
-      'AI-Assisted Workflows',
-    ],
     'showreel.eyebrow': 'Showreel',
     'showreel.title': 'My work, in one cut',
     'showreel.subtitle': 'A minute of my favorite edits — cut, colored and finished by me.',
@@ -203,16 +192,6 @@ export const translations: Record<Lang, Dict> = {
     'hero.statYears': 'سنوات من المونتاج',
     'hero.statPlugin': 'إضافة أفتر إفكتس بنيتها بنفسي',
     'hero.statAI': 'سير عمل إبداعي بالذكاء الاصطناعي',
-    marquee: [
-      'مونتاج',
-      'موشن جرافيك',
-      'محتوى قصير',
-      'محتوى طويل',
-      'أفتر إفكتس',
-      'بريمير برو',
-      'كاب كت',
-      'سير عمل بالذكاء الاصطناعي',
-    ],
     'showreel.eyebrow': 'الشوريل',
     'showreel.title': 'أعمالي في مقطع واحد',
     'showreel.subtitle': 'دقيقة من أفضل مقاطعي — قص وتلوين وتجهيز نهائي مني.',

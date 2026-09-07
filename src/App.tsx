@@ -3,7 +3,7 @@ import { BeforeAfter } from './components/BeforeAfter'
 import { Contact } from './components/Contact'
 import { Experience } from './components/Experience'
 import { Footer } from './components/Footer'
-import { Hero, Marquee } from './components/Hero'
+import { Hero } from './components/Hero'
 import { Nav } from './components/Nav'
 import { Portfolio } from './components/Portfolio'
 import { RecentFrames } from './components/RecentFrames'
@@ -17,7 +17,6 @@ function App() {
       <Nav />
       <main>
         <Hero />
-        <Marquee />
         <Showreel />
         <RecentFrames />
         <Sfx />
