@@ -489,29 +489,12 @@ export const SKILL_GROUPS: SkillGroup[] = [
     ],
   },
   {
-    id: 'motion',
-    label: { en: 'Motion Graphics', ar: 'الموشن جرافيك' },
-    items: [
-      { name: 'Kinetic Titles & Effects' },
-      { name: 'Visual Enhancement' },
-    ],
-  },
-  {
     id: 'creative',
     label: { en: 'Client & Creative', ar: 'العميل والإبداع' },
     items: [
       { name: 'Content & Client Analysis' },
       { name: 'Creative Ideation' },
       { name: 'Cross-Team Collaboration' },
-    ],
-  },
-  {
-    id: 'ai',
-    label: { en: 'AI & Creative Tech', ar: 'الذكاء الاصطناعي والتقنيات' },
-    items: [
-      { name: 'AI-Assisted Workflows' },
-      { name: 'Plugin Development' },
-      { name: 'Automation & Tooling' },
     ],
   },
 ]
