@@ -4,10 +4,10 @@ import { Reveal } from './Reveal'
 import { IconDocument, IconInstagram, IconLinkedin, IconMail, IconWhatsapp } from './icons'
 
 const SOCIALS = [
-  { name: 'Email', href: `mailto:${PROFILE.email}`, Icon: IconMail },
-  { name: 'Instagram', href: PROFILE.socials.instagram, Icon: IconInstagram },
-  { name: 'LinkedIn', href: PROFILE.socials.linkedin, Icon: IconLinkedin },
-  { name: 'WhatsApp', href: PROFILE.socials.whatsapp, Icon: IconWhatsapp },
+  { name: 'Email', href: `mailto:${PROFILE.email}`, Icon: IconMail, external: false },
+  { name: 'Instagram', href: PROFILE.socials.instagram, Icon: IconInstagram, external: true },
+  { name: 'LinkedIn', href: PROFILE.socials.linkedin, Icon: IconLinkedin, external: true },
+  { name: 'WhatsApp', href: PROFILE.socials.whatsapp, Icon: IconWhatsapp, external: true },
 ]
 
 export function Contact() {
@@ -41,8 +41,15 @@ export function Contact() {
           </div>
 
           <div className="socials">
-            {SOCIALS.map(({ name, href, Icon }) => (
-              <a key={name} href={href} target="_blank" rel="noreferrer" className="social" aria-label={name}>
+            {SOCIALS.map(({ name, href, Icon, external }) => (
+              <a
+                key={name}
+                href={href}
+                target={external ? '_blank' : undefined}
+                rel={external ? 'noreferrer' : undefined}
+                className="social"
+                aria-label={name}
+              >
                 <Icon size={18} />
               </a>
             ))}
