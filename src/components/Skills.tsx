@@ -3,16 +3,10 @@ import type { Skill } from '../types'
 import { useI18n } from '../i18n'
 import { Reveal } from './Reveal'
 
-function SkillBar({ skill }: { skill: Skill }) {
+function SkillListItem({ skill }: { skill: Skill }) {
   return (
     <li className="skill">
-      <div className="skill__head">
-        <span className="skill__name">{skill.name}</span>
-        <span className="skill__level">{skill.level}%</span>
-      </div>
-      <div className="skill__track" aria-hidden="true">
-        <span className="skill__fill" style={{ width: `${skill.level}%` }} />
-      </div>
+      <span className="skill__name">{skill.name}</span>
     </li>
   )
 }
@@ -35,7 +29,7 @@ export function Skills() {
               <h3 className="skill-card__title">{translate(group.label, lang)}</h3>
               <ul className="skill-card__list">
                 {group.items.map((skill) => (
-                  <SkillBar key={skill.name} skill={skill} />
+                  <SkillListItem key={skill.name} skill={skill} />
                 ))}
               </ul>
             </Reveal>

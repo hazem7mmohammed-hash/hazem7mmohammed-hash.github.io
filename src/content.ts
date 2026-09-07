@@ -160,7 +160,8 @@ export const translations: Record<Lang, Dict> = {
     'about.title': 'The editor behind the cut',
     'about.p1':
       'Freelance video editor with 3+ years of hands-on experience in short-form and long-form content — strong motion graphics in After Effects and an AI-driven, multidisciplinary approach to every project.',
-    'about.p2': '',
+    'about.p2':
+      'I can analyze what clients need and understand the audience, and deliver more than just an edited video.',
     'about.infoTitle': 'Quick facts',
     'about.infoLocation': 'Based in',
     'about.infoLanguages': 'Languages',
@@ -169,7 +170,8 @@ export const translations: Record<Lang, Dict> = {
     'about.infoGearValue': 'Premiere Pro · After Effects · CapCut',
     'skills.eyebrow': 'Skills',
     'skills.title': 'Tools I master',
-    'skills.subtitle': 'Everything a modern edit needs, under one timeline.',
+    'skills.subtitle':
+      'I master Adobe Premiere Pro for editing, After Effects mainly for motion graphics, and CapCut for quick edits.',
     'experience.eyebrow': 'Experience',
     'experience.title': "Where I've cut my teeth",
     'experience.subtitle': 'A short history of my work behind the timeline.',
@@ -255,7 +257,7 @@ export const translations: Record<Lang, Dict> = {
     'about.infoGearValue': 'بريمير برو · أفتر إفكتس · كاب كت',
     'skills.eyebrow': 'المهارات',
     'skills.title': 'أدوات أتقنها',
-    'skills.subtitle': 'كل ما يحتاجه المونتاج العصري على توقيت زمني واحد.',
+    'skills.subtitle': 'أتقن بريمير برو للمونتاج، وأفتر إفكتس أساسًا للموشن جرافيك، وكاب كت للتحرير السريع.',
     'experience.eyebrow': 'الخبرة',
     'experience.title': 'رحلتي وراء شريط الزمن',
     'experience.subtitle': 'لمحة قصيرة عن مسيرتي في المونتاج.',
@@ -481,36 +483,35 @@ export const SKILL_GROUPS: SkillGroup[] = [
     id: 'editing',
     label: { en: 'Editing', ar: 'المونتاج' },
     items: [
-      { name: 'Adobe Premiere Pro', level: 95 },
-      { name: 'Short-Form Content', level: 92 },
-      { name: 'Long-Form & Pacing', level: 88 },
+      { name: 'Adobe Premiere Pro' },
+      { name: 'After Effects' },
+      { name: 'CapCut' },
     ],
   },
   {
     id: 'motion',
     label: { en: 'Motion Graphics', ar: 'الموشن جرافيك' },
     items: [
-      { name: 'After Effects', level: 90 },
-      { name: 'Kinetic Titles & Effects', level: 82 },
-      { name: 'Visual Enhancement', level: 80 },
+      { name: 'Kinetic Titles & Effects' },
+      { name: 'Visual Enhancement' },
     ],
   },
   {
     id: 'creative',
     label: { en: 'Client & Creative', ar: 'العميل والإبداع' },
     items: [
-      { name: 'Content & Client Analysis', level: 90 },
-      { name: 'Creative Ideation', level: 85 },
-      { name: 'Cross-Team Collaboration', level: 84 },
+      { name: 'Content & Client Analysis' },
+      { name: 'Creative Ideation' },
+      { name: 'Cross-Team Collaboration' },
     ],
   },
   {
     id: 'ai',
     label: { en: 'AI & Creative Tech', ar: 'الذكاء الاصطناعي والتقنيات' },
     items: [
-      { name: 'AI-Assisted Workflows', level: 92 },
-      { name: 'Plugin Development', level: 82 },
-      { name: 'Automation & Tooling', level: 72 },
+      { name: 'AI-Assisted Workflows' },
+      { name: 'Plugin Development' },
+      { name: 'Automation & Tooling' },
     ],
   },
 ]
