@@ -1,7 +1,7 @@
-import { PROFILE } from '../content'
+import { PROFILE, asset } from '../content'
 import { useI18n } from '../i18n'
 import { Reveal } from './Reveal'
-import { IconInstagram, IconLinkedin, IconMail, IconWhatsapp } from './icons'
+import { IconDocument, IconInstagram, IconLinkedin, IconMail, IconWhatsapp } from './icons'
 
 const SOCIALS = [
   { name: 'Email', href: `mailto:${PROFILE.email}`, Icon: IconMail },
@@ -32,6 +32,10 @@ export function Contact() {
             >
               <IconWhatsapp size={18} />
               {t('contact.whatsapp')}
+            </a>
+            <a href={asset('cv/Hazem_MohamedCV.pdf')} target="_blank" rel="noreferrer" className="btn btn--ghost btn--lg">
+              <IconDocument size={18} />
+              {t('contact.viewCv')}
             </a>
             <p className="contact__response">{t('contact.response')}</p>
           </div>

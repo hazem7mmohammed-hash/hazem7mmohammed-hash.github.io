@@ -91,6 +91,7 @@ export type Dict = {
   'contact.title': string
   'contact.subtitle': string
   'contact.whatsapp': string
+  'contact.viewCv': string
   'contact.response': string
   'footer.rights': string
   'footer.built': string
@@ -177,6 +178,7 @@ export const translations: Record<Lang, Dict> = {
     'contact.subtitle':
       "I'm currently taking on new projects. Tell me about yours — I usually reply within 24 hours.",
     'contact.whatsapp': 'Chat on WhatsApp',
+    'contact.viewCv': 'View CV',
     'contact.response': 'Usually replies within 24h',
     'footer.rights': 'All rights reserved.',
     'footer.built': 'Designed & built with React',
@@ -261,6 +263,7 @@ export const translations: Record<Lang, Dict> = {
     'contact.title': 'لنصنع شيئًا رائعًا معًا',
     'contact.subtitle': 'أستقبل حاليًا مشاريع جديدة. أخبرني عن مشروعك — أرد عادةً خلال 24 ساعة.',
     'contact.whatsapp': 'تواصل عبر واتساب',
+    'contact.viewCv': 'عرض السيرة الذاتية',
     'contact.response': 'أرد عادةً خلال 24 ساعة',
     'footer.rights': 'جميع الحقوق محفوظة.',
     'footer.built': 'صُمم وبُني بـ React',

@@ -67,6 +67,22 @@ export function IconArrowUp({ size = 16 }: IconProps) {
   )
 }
 
+export function IconDownload({ size = 18 }: IconProps) {
+  return (
+    <svg {...baseProps(size)}>
+      <path d="M12 3v12m0 0 5-5m-5 5-5-5M4 19h16" stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+export function IconDocument({ size = 18 }: IconProps) {
+  return (
+    <svg {...baseProps(size)}>
+      <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6Zm0 0v6h6M9 13h6m-6 4h6" stroke="currentColor" strokeWidth="1.8" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
 export function IconMail({ size = 18 }: IconProps) {
   return (
     <svg {...baseProps(size)}>
