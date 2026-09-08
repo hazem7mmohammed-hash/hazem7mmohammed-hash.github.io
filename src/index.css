@@ -952,6 +952,10 @@ background:
   cursor: pointer;
 }
 
+[dir='rtl'] .vroom__range {
+  background: linear-gradient(to left, var(--accent) var(--p, 0%), rgba(255, 255, 255, 0.28) var(--p, 0%));
+}
+
 .vroom__range::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 14px;

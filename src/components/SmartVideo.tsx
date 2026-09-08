@@ -80,21 +80,26 @@ export const SmartVideo = forwardRef<HTMLVideoElement, SmartVideoProps>(function
   const toggleReveal = () => {
     if (!wall) return
     const next = !revealed
-    setSoundOn(false)
-    setRevealed(next)
-    const video = videoRef.current
-    if (!video) return
     if (next) {
-      video.muted = true
+      setSoundOn(true)
+      setRevealed(next)
+      const video = videoRef.current
+      if (!video) return
+      video.muted = false
       playVideo()
     } else {
-      video.pause()
+      setRevealed(next)
+      videoRef.current?.pause()
     }
   }
 
   const toggleSound = () => {
     if (!revealed) return
-    setSoundOn((s) => !s)
+    const next = !soundOn
+    setSoundOn(next)
+    const video = videoRef.current
+    if (!video) return
+    video.muted = !next
     playVideo()
   }
 
@@ -120,6 +125,21 @@ export const SmartVideo = forwardRef<HTMLVideoElement, SmartVideoProps>(function
       video.removeEventListener('seeked', onTime)
     }
   }, [videoRef])
+
+  useEffect(() => {
+    const video = videoRef.current
+    if (!video || !(wall && revealed)) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) video.pause()
+        }
+      },
+      { threshold: 0 },
+    )
+    observer.observe(video)
+    return () => observer.disconnect()
+  }, [wall, revealed, videoRef])
 
   const max = duration > 0 ? duration : 1
   const value = Math.min(position, max)
