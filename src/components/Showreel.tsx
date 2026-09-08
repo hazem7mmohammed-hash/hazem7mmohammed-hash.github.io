@@ -43,10 +43,6 @@ export function Showreel() {
               }
             />
           </div>
-          <p className="stage-note">
-            <IconPlay size={13} />
-            {SHOWREEL_SRC}
-          </p>
         </Reveal>
       </div>
     </section>

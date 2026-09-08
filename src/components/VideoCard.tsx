@@ -1,7 +1,5 @@
 import { useRef } from 'react'
-import { translate } from '../content'
 import type { Frame } from '../types'
-import { useI18n } from '../i18n'
 import { useVideoRatio } from '../hooks'
 import { Reveal } from './Reveal'
 import { SmartVideo } from './SmartVideo'
@@ -13,7 +11,6 @@ interface VideoCardProps {
 }
 
 export function VideoCard({ video, index, tag }: VideoCardProps) {
-  const { lang } = useI18n()
   const videoRef = useRef<HTMLVideoElement>(null)
   const ratio = useVideoRatio(videoRef)
   const ratioStyle = ratio != null && ratio < 1 ? { aspectRatio: String(ratio) } : undefined
@@ -30,17 +27,12 @@ export function VideoCard({ video, index, tag }: VideoCardProps) {
           className="card__video"
           muted
           loop
-          fallback={<span className="frame-tag">{video.src}</span>}
         />
         <span className="card__duration">{video.duration}</span>
       </figure>
 
       <figcaption className="card__body">
-        <div>
-          <p className="card__category">{tag}</p>
-          <h3 className="card__title">{translate(video.title, lang)}</h3>
-        </div>
-        <span className="card__year">{video.year}</span>
+        <p className="card__category">{tag}</p>
       </figcaption>
     </Reveal>
   )
